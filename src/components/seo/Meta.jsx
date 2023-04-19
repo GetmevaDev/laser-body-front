@@ -1,8 +1,6 @@
 import Head from "next/head";
 import React from "react";
 
-const getTitle = (title) => `${title}`;
-
 const Meta = ({ title, description, children }) => (
   <>
     <Head>

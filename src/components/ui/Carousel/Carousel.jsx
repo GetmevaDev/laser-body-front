@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 import { CarouselItem } from "./CarouselItem/CarouselItem";
 
-import styles from "./Carousel.module.scss";
+// import styles from "./Carousel.module.scss";
 
 export const Carousel = ({ testimonials }) => (
   <Swiper
