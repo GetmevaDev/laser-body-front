@@ -1,7 +1,7 @@
 export async function fetchAPI(path) {
   const { API_URL } = process.env;
 
-  const response = await fetch(`${API_URL}${path}`, {
+  const response = await fetch(`http://localhost:1337/api/${path}`, {
     headers: {
       Authorization: `Bearer ${process.env.API_TOKEN}`,
     },
