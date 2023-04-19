@@ -1,0 +1,25 @@
+.testimonials {
+  background: #f8f9fa;
+  border-radius: 20px;
+  margin: 100px 0;
+  padding: 0 30px;
+}
+
+.testimonials_inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}

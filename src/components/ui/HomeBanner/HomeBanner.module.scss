@@ -1,0 +1,34 @@
+.banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.banner_left {
+  position: relative;
+  img {
+    border-radius: 60px 0px 0px 60px;
+  }
+}
+
+.block {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 20px;
+  bottom: 50px;
+  right: 30px;
+}
+
+.banner_right {
+  position: relative;
+
+  img {
+    border-radius: 0px 60px 60px 0px;
+  }
+}
+
+.title {
+  text-align: center;
+}

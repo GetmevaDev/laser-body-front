@@ -1,0 +1,45 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  cursor: pointer;
+  height: 339px;
+  user-select: none;
+  border-radius: 20px;
+  padding: 37px 76px 0px 37px;
+}
+
+.item_top {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.avatar {
+  padding-bottom: 20px;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.name {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+  padding-bottom: 25px;
+}

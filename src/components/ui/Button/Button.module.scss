@@ -1,0 +1,27 @@
+.button {
+  background: #f000bb;
+  box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
+  border-radius: 0px 15px;
+  padding: 26px 48px;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #bd0194;
+  }
+
+  *:active {
+    background: #bd0194;
+  }
+}

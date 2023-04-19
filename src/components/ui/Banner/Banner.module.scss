@@ -1,0 +1,57 @@
+.banner {
+  position: relative;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 125%;
+  color: #000000;
+}
+
+.title_page {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  margin: 0 auto;
+  line-height: 125%;
+  color: #000000;
+}
+
+.description {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 75px;
+}

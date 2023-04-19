@@ -1,0 +1,51 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+  padding: 50px 30px 88px 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name {
+  font-family: "DM Serif Display";
+
+  padding-top: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  padding-bottom: 50px;
+  color: #000000;
+}
+
+.description {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #4d5053;
+}
+
+.icon {
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 93px;
+  height: 93px;
+  border-radius: 50%;
+}

@@ -1,0 +1,25 @@
+.source {
+  display: flex;
+
+  padding: 10px 30px 62px 30px;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  color: #f000bb;
+}
+
+.path {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+}

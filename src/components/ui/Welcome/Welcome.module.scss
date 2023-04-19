@@ -1,0 +1,78 @@
+.welcome {
+  margin: 100px 30px;
+
+  display: flex;
+  gap: 50px;
+}
+
+.welcome_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 66px;
+  padding-bottom: 33px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.button {
+  margin-top: 50px;
+}
+
+.description {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  padding-bottom: 45px;
+  color: #4d5053;
+}
+
+.image {
+  border-radius: 50px 0px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phone_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+  width: 93px;
+  height: 93px;
+  border-radius: 50%;
+}
+
+.link {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.call {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+
+  color: #4d5053;
+}

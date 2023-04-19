@@ -1,0 +1,29 @@
+.our {
+  margin: 100px 30px;
+}
+
+.services {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.info {
+  margin-top: 30px;
+}
+
+.description {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #4d5053;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

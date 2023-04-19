@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  gap: 66px;
+}
+
+.logo {
+  width: 177px;
+  height: 25px;
+}
+
+.footer_list {
+  li {
+    a {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  li + li {
+    padding-left: 30px !important;
+  }
+}
