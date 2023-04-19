@@ -1,5 +1,12 @@
-import React from "react";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function NotFoundPage() {
-  return <div>NotFoundPage</div>;
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/");
+  });
+
+  return null;
 }

@@ -12,6 +12,11 @@ export async function getStaticProps() {
     data: { attributes },
   } = await fetchAPI("shop-men-page?populate=deep");
 
+  if (!attributes) {
+    return {
+      notFound: true,
+    };
+  }
   return {
     props: {
       attributes,
