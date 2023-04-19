@@ -13,7 +13,6 @@ export const ContactUs = ({ data }) => (
 
     <Source sub="Contact us" />
 
-    {console.log(data, "data")}
     <Contact
       page
       data={data?.contact_us?.contact_us_tem}

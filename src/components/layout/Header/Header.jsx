@@ -1,5 +1,4 @@
 import React from "react";
-import useSWR from "swr";
 
 import { HeaderList, Logo } from "@/components/ui";
 

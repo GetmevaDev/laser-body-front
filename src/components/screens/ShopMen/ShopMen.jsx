@@ -2,7 +2,6 @@ import React from "react";
 
 import { Layout } from "@/components/layout";
 import { Banner, Services, Source } from "@/components/ui";
-import { fetchAPI } from "@/components/utils";
 
 export const ShopMen = ({ data }) => (
   <Layout title="Shop men">

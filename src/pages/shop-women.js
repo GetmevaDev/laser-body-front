@@ -1,4 +1,4 @@
-import { About, ShopWomen } from "@/components/screens";
+import { ShopWomen } from "@/components/screens";
 import { fetchAPI } from "@/components/utils";
 
 export default function ShopWomanPage({ attributes }) {
@@ -14,6 +14,6 @@ export async function getStaticProps() {
     props: {
       attributes,
     },
-    revalidate: 10, // In seconds
+    revalidate: 60, // In seconds
   };
 }

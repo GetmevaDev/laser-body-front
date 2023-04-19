@@ -1,9 +1,6 @@
 import React from "react";
-// import required modules
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import { responsive } from "@/components/utils";
 
 import "swiper/css";
 import "swiper/css/pagination";

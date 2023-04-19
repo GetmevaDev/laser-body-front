@@ -3,21 +3,18 @@ import React from "react";
 import { Layout } from "@/components/layout";
 import { Banner, Description, Source } from "@/components/ui";
 
-export const About = ({ data }) => {
-  console.log(data, " about page");
-  return (
-    <Layout title="About" description="About" data={data}>
-      <Banner
-        image={data?.banner?.image?.data?.attributes?.url}
-        title={data?.banner?.title}
-        page
-        textButtons={data?.banner}
-        buttons
-      />
+export const About = ({ data }) => (
+  <Layout title="About" description="About" data={data}>
+    <Banner
+      image={data?.banner?.image?.data?.attributes?.url}
+      title={data?.banner?.title}
+      page
+      textButtons={data?.banner}
+      buttons
+    />
 
-      <Source sub="Women" />
+    <Source sub="Women" />
 
-      <Description description={data?.description} />
-    </Layout>
-  );
-};
+    <Description description={data?.description} />
+  </Layout>
+);

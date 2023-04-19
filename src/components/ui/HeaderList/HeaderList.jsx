@@ -5,38 +5,6 @@ import React from "react";
 
 import styles from "./HeaderList.module.scss";
 
-const list = [
-  {
-    id: 1,
-    name: "Home us",
-    path: "/",
-  },
-
-  {
-    id: 2,
-    name: "About us",
-    path: "/about",
-  },
-
-  {
-    id: 3,
-    name: "Mens Menu",
-    path: "/shop-man",
-  },
-
-  {
-    id: 4,
-    name: "Womens Menu",
-    path: "/shop-women",
-  },
-
-  {
-    id: 5,
-    name: "Contact Us",
-    path: "/contact-us",
-  },
-];
-
 export const HeaderList = ({ className, navigation }) => {
   const router = useRouter();
 

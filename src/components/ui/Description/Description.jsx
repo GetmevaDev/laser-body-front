@@ -6,6 +6,7 @@ export const Description = ({ description }) => (
   <div className={styles.description}>
     <div
       className={styles.text}
+      // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
         __html: `	${description}`,
       }}
