@@ -7,6 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "lint:": "eslint \"**/*.{js,jsx}\"",
     "lint:fix": "eslint \"**/*.{js,jsx}\" --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
