@@ -27,7 +27,10 @@
 
 .accordion__inner {
   border-radius: 10px;
-  width: 50%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
 }
 
 .accordion__inner:nth-child(1) {
@@ -39,9 +42,6 @@
 }
 
 .accordion__block {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 .accordion {
@@ -55,7 +55,7 @@
     line-height: 34px;
     display: flex;
     align-items: center;
-    font-family: "DM Serif Display";
+    font-family: var(--font-dm);
     color: #1d1d1d;
     cursor: pointer;
     justify-content: space-between;
@@ -84,7 +84,7 @@
     line-height: 22px;
     letter-spacing: 0.01em;
     color: #4d5053;
-    font-family: "DM Serif Display";
+    font-family: var(--font-jost);
   }
 
   &.active &__content {

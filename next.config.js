@@ -7,8 +7,9 @@ const nextConfig = {
     API_TOKEN: process.env.API_TOKEN,
   },
   images: {
-    domains: ["localhost", "res.cloudinary.com"],
+    domains: ["localhost", "res.cloudinary.com", "laser-body.herokuapp.com"],
     unoptimized: true,
+    disableStaticImages: true,
   },
 };
 

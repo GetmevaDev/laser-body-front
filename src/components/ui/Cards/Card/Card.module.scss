@@ -17,7 +17,7 @@
 }
 
 .card_title {
-  font-family: "DM Serif Display";
+  font-family: var(--font-dm);
   font-style: normal;
   font-weight: 400;
   padding-top: 28px;
@@ -30,7 +30,7 @@
 }
 
 .description {
-  font-family: "Jost";
+  font-family: var(--font-jost);
   font-weight: 400;
   font-size: 20px;
   line-height: 29px;

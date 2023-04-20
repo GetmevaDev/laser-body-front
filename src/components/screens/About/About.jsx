@@ -13,7 +13,7 @@ export const About = ({ data }) => (
       buttons
     />
 
-    <Source sub="Women" />
+    <Source sub="About" />
 
     <Description description={data?.description} />
   </Layout>

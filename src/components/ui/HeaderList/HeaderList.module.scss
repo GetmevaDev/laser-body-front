@@ -1,5 +1,6 @@
 .list {
   display: flex;
+
   align-items: center;
 }
 
@@ -12,6 +13,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 125%;
+  font-family: var(--font-jost);
+
   display: flex;
   align-items: center;
   text-align: center;

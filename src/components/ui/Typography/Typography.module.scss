@@ -1,7 +1,7 @@
 .typography {
-  font-family: "DM Serif Display";
+  font-family: var(--font-dm);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 65px;
   line-height: 125%;
   display: flex;
