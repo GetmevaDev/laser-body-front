@@ -19,3 +19,9 @@
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: $tableWidth) {
+  .cards {
+    margin: 50px 0;
+  }
+}

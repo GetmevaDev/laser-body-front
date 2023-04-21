@@ -24,6 +24,7 @@ export const HeaderList = ({ className, navigation }) => {
           <li key={item.id} className={styles.item}>
             <Link
               href={item.path}
+              onClick={() => setNav(!nav)}
               className={
                 router.pathname === item.path ? styles.active : styles.link
               }

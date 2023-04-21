@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .button {
   background: #f000bb;
   box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
@@ -24,5 +26,11 @@
 
   *:active {
     background: #bd0194;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .button {
+    padding: 13px 24px;
   }
 }

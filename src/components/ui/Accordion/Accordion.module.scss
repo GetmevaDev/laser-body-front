@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .accordion {
   background: #f8f9fa;
   border-radius: 20px;
@@ -24,4 +26,15 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #000000;
+}
+
+@media screen and (max-width: $tableWidth) {
+  .title {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .accordion {
+    margin: 50px 0;
+  }
 }
