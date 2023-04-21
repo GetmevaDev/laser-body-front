@@ -8,6 +8,7 @@ export const ContactUs = ({ data }) => (
     <Banner
       image={data?.banner?.image?.data?.attributes?.url}
       title={data?.banner?.title}
+      alt={data?.banner?.alt}
       page
     />
 

@@ -11,7 +11,7 @@ export const HomeBanner = ({ banner }) => (
       <Image
         width={600}
         height={500}
-        alt={banner[0].title}
+        alt={banner[0].alt}
         src={banner[0].image?.data?.attributes?.url}
       />
 
@@ -26,7 +26,7 @@ export const HomeBanner = ({ banner }) => (
       <Image
         width={600}
         height={500}
-        alt={banner[1]?.title}
+        alt={banner[1]?.alt}
         src={banner[1].image?.data?.attributes?.url}
       />
       <div className={styles.block}>

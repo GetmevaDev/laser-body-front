@@ -12,6 +12,7 @@ export const Banner = ({
   buttons,
   page,
   textButtons,
+  alt,
 }) => (
   <section className={styles.banner}>
     <Image
@@ -19,14 +20,13 @@ export const Banner = ({
       height={500}
       src={image}
       className={styles.image}
-      alt="banner image"
+      alt={alt}
     />
     <div className={page ? styles.page : styles.info}>
       <Typography className={page ? styles.title_page : styles.title}>
         {title}
       </Typography>
       <p className={styles.description}>{description}</p>
-
       {buttons && (
         <div className={styles.buttons}>
           <Button>{textButtons?.button_left}</Button>

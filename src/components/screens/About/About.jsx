@@ -10,6 +10,7 @@ export const About = ({ data }) => (
       title={data?.banner?.title}
       page
       textButtons={data?.banner}
+      alt={data?.banner?.alt}
       buttons
     />
 

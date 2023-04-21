@@ -9,6 +9,7 @@ export const ShopMen = ({ data }) => (
       image={data?.banner?.image?.data?.attributes?.url}
       title={data?.banner?.title}
       description={data?.banner?.description}
+      alt={data?.banner?.alt}
     />
 
     <Source sub="Men" />

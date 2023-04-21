@@ -12,7 +12,7 @@ export const ChooseUsItem = ({ cards }) => (
             width={40}
             height={40}
             src={card?.icon?.data?.attributes?.url}
-            alt={card.text}
+            alt={card?.alt}
           />
         </div>
         <div className={styles.name}>{card.text}</div>

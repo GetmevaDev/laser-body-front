@@ -13,10 +13,11 @@ export const Contact = ({ page, title, data, date, iframe }) => (
           {title}
         </Typography>
       )}
+      {console.log(data, "data")}
       <ul className={styles.list}>
         <li className={styles.item}>
           <Image
-            alt="phone"
+            alt={data[0].alt}
             width={32}
             height={32}
             src={data[0]?.icon?.data?.attributes?.url}
@@ -29,7 +30,7 @@ export const Contact = ({ page, title, data, date, iframe }) => (
 
         <li className={styles.item}>
           <Image
-            alt="location"
+            alt={data[1].alt}
             width={32}
             height={32}
             src={data[1]?.icon?.data?.attributes?.url}
@@ -40,7 +41,7 @@ export const Contact = ({ page, title, data, date, iframe }) => (
 
         <li className={styles.item}>
           <Image
-            alt="clock"
+            alt={data[2].alt}
             width={32}
             height={32}
             src={data[2]?.icon?.data?.attributes?.url}

@@ -3,7 +3,7 @@ import React from "react";
 
 import styles from "./CarouselItem.module.scss";
 
-export const CarouselItem = ({ name, description, icon }) => (
+export const CarouselItem = ({ name, description, icon, alt }) => (
   <div className={styles.item}>
     <div className={styles.item_top}>
       <div className={styles.avatar}>
@@ -11,7 +11,7 @@ export const CarouselItem = ({ name, description, icon }) => (
           width={77}
           height={77}
           src={icon?.data?.attributes?.url}
-          alt={name}
+          alt={alt}
         />
       </div>
       <div className={styles.name}>{name}</div>

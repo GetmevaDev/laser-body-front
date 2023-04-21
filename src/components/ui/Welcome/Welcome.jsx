@@ -20,7 +20,7 @@ export const Welcome = ({ data }) => (
             width={32}
             height={32}
             src={data?.icon?.data?.attributes?.url}
-            alt="phone"
+            alt={data?.alt_icon}
           />
         </div>
 
@@ -38,7 +38,7 @@ export const Welcome = ({ data }) => (
       <Image
         width={620}
         height={500}
-        alt="welcome"
+        alt={data?.alt_right_image}
         src={data?.right_image?.data?.attributes?.url}
         className={styles.image}
       />
