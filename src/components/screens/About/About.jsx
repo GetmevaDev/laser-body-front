@@ -11,9 +11,11 @@ export const About = ({ data }) => (
       page
       textButtons={data?.banner}
       alt={data?.banner?.alt}
+      leftLink={data?.banner?.button_left_link}
+      rightLink={data?.banner?.button_right_link}
       buttons
     />
-
+    {console.log(data, " about")}
     <Source sub="About" />
 
     <Description description={data?.description} />

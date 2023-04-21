@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import { Button, Typography } from "..";
@@ -11,6 +12,8 @@ export const Welcome = ({ data }) => (
       <Typography tag="h2" className={styles.title}>
         {data?.title}
       </Typography>
+
+      {console.log(data, " data")}
 
       <div className={styles.description}>{data?.description}</div>
 
@@ -25,14 +28,15 @@ export const Welcome = ({ data }) => (
         </div>
 
         <div className={styles.tel}>
-          <a href="tel:(718) 1234567" className={styles.link}>
+          <a href={`tel:${data?.phone}`} className={styles.link}>
             {data?.phone}
           </a>
           <div className={styles.call}> {data?.text_under_phone}</div>
         </div>
       </div>
-
-      <Button className={styles.button}> {data?.button}</Button>
+      <Link href={data?.button_link}>
+        <Button className={styles.button}> {data?.button}</Button>
+      </Link>
     </div>
     <div className={styles.welcome_right}>
       <Image

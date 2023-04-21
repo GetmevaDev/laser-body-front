@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import { Button } from "../Button/Button";
@@ -23,7 +24,9 @@ export const OurService = ({ data }) => (
         <Typography tag="h2">{data?.title}</Typography>
 
         <div className={styles.description}>{data?.description}</div>
-        <Button>{data?.button}</Button>
+        <Link href={data?.button_link}>
+          <Button>{data?.button}</Button>
+        </Link>
       </div>
     </div>
   </div>

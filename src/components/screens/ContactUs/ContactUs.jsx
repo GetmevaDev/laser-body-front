@@ -19,6 +19,7 @@ export const ContactUs = ({ data }) => (
       data={data?.contact_us?.contact_us_tem}
       date={data?.contact_us?.date_info}
       iframe={data?.contact_us?.iframe}
+      buttonLink={data?.contact_us?.button_link}
     />
   </Layout>
 );

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import { Button, Typography } from "@/components/ui";
@@ -13,6 +14,8 @@ export const Banner = ({
   page,
   textButtons,
   alt,
+  leftLink,
+  rightLink,
 }) => (
   <section className={styles.banner}>
     <Image
@@ -29,8 +32,12 @@ export const Banner = ({
       <p className={styles.description}>{description}</p>
       {buttons && (
         <div className={styles.buttons}>
-          <Button>{textButtons?.button_left}</Button>
-          <Button>{textButtons?.button_right}</Button>
+          <a href={`tel:${leftLink}`}>
+            <Button>{textButtons?.button_left}</Button>
+          </a>
+          <Link href={rightLink}>
+            <Button>{textButtons?.button_right}</Button>
+          </Link>
         </div>
       )}
     </div>

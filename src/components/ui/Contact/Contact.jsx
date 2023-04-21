@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import { Button, Typography } from "..";
 
 import styles from "./Contact.module.scss";
 
-export const Contact = ({ page, title, data, date, iframe }) => (
+export const Contact = ({ page, title, data, date, iframe, buttonLink }) => (
   <div className={page ? styles.contact_page : styles.contact}>
     <div className={styles.contact_us}>
       {!page && (
@@ -13,7 +14,6 @@ export const Contact = ({ page, title, data, date, iframe }) => (
           {title}
         </Typography>
       )}
-      {console.log(data, "data")}
       <ul className={styles.list}>
         <li className={styles.item}>
           <Image
@@ -57,7 +57,13 @@ export const Contact = ({ page, title, data, date, iframe }) => (
           </div>
         </li>
 
-        <li>{page && <Button>Book now</Button>}</li>
+        <li>
+          {page && (
+            <Link href={buttonLink}>
+              <Button>Book now</Button>
+            </Link>
+          )}
+        </li>
       </ul>
     </div>
 
