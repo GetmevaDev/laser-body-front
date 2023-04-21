@@ -14,6 +14,7 @@ export const OurService = ({ data }) => (
         height={500}
         src={data?.Image_left?.data?.attributes?.url}
         alt="body"
+        className={styles.image}
       />
 
       <div className={styles.info}>

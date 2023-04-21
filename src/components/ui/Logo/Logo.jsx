@@ -1,15 +1,18 @@
 import classNames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 import styles from "./Logo.module.scss";
 
 export const Logo = ({ copy, className, navigation }) => (
-  <Link href="/">
-    <img
+  <Link href="/" className={styles.logo}>
+    <Image
       src={
         navigation?.data?.attributes?.navigation?.Logo?.data?.attributes?.url
       }
+      width={341}
+      height={50}
       alt=""
       className={classNames(styles.images, className)}
     />

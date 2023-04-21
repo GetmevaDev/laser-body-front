@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .banner {
   display: flex;
   align-items: center;
@@ -31,4 +33,24 @@
 
 .title {
   text-align: center;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner_left {
+    img {
+      border-radius: 0;
+    }
+  }
+
+  .banner_right {
+    img {
+      border-radius: 0;
+    }
+  }
 }

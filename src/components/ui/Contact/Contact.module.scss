@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .contact {
   margin: 100px 30px 0 30px;
   display: flex;
@@ -91,4 +93,58 @@
 
 .iframe {
   border: none;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .title {
+    font-size: 50px;
+  }
+
+  .contact_us {
+    padding: 20px 50px 25px 25px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px 30px 0 30px;
+  }
+
+  .contact_page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map {
+    position: initial;
+
+    iframe {
+      padding: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .title {
+    font-size: 45px;
+    padding-bottom: 20px;
+  }
+
+  .list {
+    gap: 20px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+
+  .map {
+    position: initial;
+
+    iframe {
+      width: 300px;
+      height: 300px;
+    }
+  }
 }

@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.scss";
+
 .item {
   display: flex;
   flex-direction: column;
@@ -44,4 +46,22 @@
   color: #4d5053;
   padding-bottom: 25px;
   font-family: var(--font-jost);
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .item {
+    padding: 20px 50px 0 20px;
+  }
+
+  .item_top {
+    gap: 15px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
 }

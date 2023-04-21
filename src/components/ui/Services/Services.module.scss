@@ -1,6 +1,14 @@
+@import "../../../styles/variables.scss";
+
 .services {
   padding: 0 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
+}
+
+@media screen and (max-width: $tableWidth) {
+  .services {
+    grid-template-columns: auto;
+  }
 }

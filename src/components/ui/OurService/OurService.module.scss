@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .our {
   margin: 100px 30px;
 }
@@ -26,4 +28,19 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .our {
+    margin: 50px 30px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    display: block;
+    margin: 0 auto;
+  }
 }
