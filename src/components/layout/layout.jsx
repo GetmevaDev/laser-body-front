@@ -15,7 +15,10 @@ export const Layout = ({ children, title, description }) => {
     data: navigation,
     isError,
     isLoading,
-  } = useSWR(`${process.env.API_URL}/navigation?populate=deep`, fetcher);
+  } = useSWR(
+    "https://laser-body.herokuapp.com/api/navigation?populate=deep",
+    fetcher
+  );
 
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Error...</div>;
