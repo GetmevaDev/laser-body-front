@@ -30,7 +30,7 @@ export const Carousel = ({ testimonials }) => (
       },
       1280: {
         slidesPerGroup: 2,
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
     }}
     pagination={{
