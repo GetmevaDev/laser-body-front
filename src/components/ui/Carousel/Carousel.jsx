@@ -39,6 +39,7 @@ export const Carousel = ({ testimonials }) => (
     modules={[Pagination]}
     className="mySwiper"
   >
+    {console.log(testimonials, "test")}
     {testimonials?.map((item) => (
       <SwiperSlide key={item.id}>
         <CarouselItem {...item} />

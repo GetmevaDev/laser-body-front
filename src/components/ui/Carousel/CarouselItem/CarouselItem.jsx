@@ -7,12 +7,14 @@ export const CarouselItem = ({ name, description, icon, alt }) => (
   <div className={styles.item}>
     <div className={styles.item_top}>
       <div className={styles.avatar}>
-        <Image
-          width={77}
-          height={77}
-          src={icon?.data?.attributes?.url}
-          alt={alt}
-        />
+        {!icon?.data === null && (
+          <Image
+            width={77}
+            height={77}
+            src={icon?.data?.attributes?.url}
+            alt={alt}
+          />
+        )}
       </div>
       <div className={styles.name}>{name}</div>
     </div>
