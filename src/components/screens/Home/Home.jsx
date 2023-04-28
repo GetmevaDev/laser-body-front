@@ -22,7 +22,12 @@ export const Home = ({ data }) => (
 
     <OurService data={data?.service} />
 
-    <Accordion data={data?.faq?.faq_item} />
+    <Accordion
+      data={data?.faq?.faq_item_left}
+      dataRight={data?.faq?.faq_item_right}
+      titleLeft={data?.faq?.title_faq_left}
+      titleRight={data?.faq?.title_faq_right}
+    />
 
     <ChooseUs
       data={data?.choose_us?.choose_us_item}
