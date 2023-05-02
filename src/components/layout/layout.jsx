@@ -23,8 +23,8 @@ export const Layout = ({ children, title, description }) => {
     isError,
     isLoading,
   } = useSWR(
-    // "https://laser-body.herokuapp.com/api/navigation?populate=deep",
-    "http://localhost:1337/api/navigation?populate=deep",
+    "https://laser-body.herokuapp.com/api/navigation?populate=deep",
+    // "http://localhost:1337/api/navigation?populate=deep",
     fetcher
   );
 
