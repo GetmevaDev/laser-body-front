@@ -93,28 +93,26 @@
   }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1200px) {
-  .accordion__block {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .accordion__inner {
-    width: 100%;
-  }
-  .accordion {
-    width: 100%;
-  }
-
-  .accordion__block {
-    padding-bottom: 50px;
-  }
-}
-
 @media screen and (max-width: $smDesktopWidth) {
   .accordion__inner {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: $smTableWidth) {
+  .accordion__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accordion__inner {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .accordion__title {
+    align-items: flex-start;
   }
 }
