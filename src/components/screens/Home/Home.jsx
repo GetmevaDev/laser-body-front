@@ -14,11 +14,13 @@ import {
 
 export const Home = ({ data }) => (
   <Layout title="Home" description="description">
-    <HomeBanner banner={data?.banner} />
+    <HomeBanner banner={data?.banner} bannerMobile={data?.banner_mobile} />
 
     <Welcome data={data?.welcome} />
 
     <Cards cards={data?.cards?.card} />
+
+    {console.log(data, " data")}
 
     <OurService data={data?.service} />
 
