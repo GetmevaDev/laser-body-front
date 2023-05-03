@@ -17,7 +17,7 @@ export const ServiceItem = ({ text, image }) => (
       />
     </div>
 
-    <Button className={styles.button}>shop now</Button>
+    {/* <Button className={styles.button}>shop now</Button> */}
 
     <div className={styles.name}>{text}</div>
   </div>
