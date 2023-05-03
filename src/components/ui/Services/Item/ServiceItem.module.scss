@@ -4,11 +4,30 @@
   border-radius: 20px;
 
   padding: 20px 23px 30px 20px;
+  position: relative;
+}
+
+.button {
+  padding: 20px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image_inner {
+  position: relative;
 }
 
 .image {
   border-radius: 20px;
   object-fit: cover;
+}
+
+.image_inner .image:hover {
+}
+
+.image_inner:hover {
 }
 
 .name {

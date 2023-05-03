@@ -10,5 +10,7 @@
 @media screen and (max-width: $tableWidth) {
   .services {
     grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
   }
 }
