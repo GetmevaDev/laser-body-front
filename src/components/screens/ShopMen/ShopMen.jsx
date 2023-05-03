@@ -14,6 +14,6 @@ export const ShopMen = ({ data }) => (
 
     <Source sub="Men" />
 
-    <Services services={data?.services?.service_item} />
+    <Services services={data?.services?.service_item} button={data?.services} />
   </Layout>
 );

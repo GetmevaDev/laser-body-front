@@ -13,6 +13,6 @@ export const ShopWomen = ({ data }) => (
     />
     <Source sub="Women" />
 
-    <Services services={data?.services?.service_item} />
+    <Services services={data?.services?.service_item} button={data?.services} />
   </Layout>
 );
